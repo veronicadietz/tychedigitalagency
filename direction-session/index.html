@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Direction Session | Tyche Digital Agency</title>
+<meta name="description" content="A 60-minute paid diagnostic session with Veronica Dietz. $500. We locate the load-bearing issue in your business and map the next moves. Written summary included.">
+<link rel="icon" href="https://assets.cdn.filesafe.space/erNBMEPHr5mwBKO660ir/media/695ea829a0a48408c7196071.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Libre+Baskerville:ital,wght@0,400;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ivory:#F8F5F0;--ivory-dark:#F0EBE3;--navy:#0A1F44;
+  --brown:#7C5C3B;--olive:#3E4D3A;--camel:#D1C4A7;
+  --camel-mid:#B8A98A;--camel-light:#EDE5D4;
+  --ink:#1A1610;--mid:#6B6156;--light:#9A9088;
+  --border-camel:rgba(184,169,138,0.40);
+  --serif-h:'Playfair Display',Georgia,serif;
+  --serif-b:'Libre Baskerville',Georgia,serif;
+  --sans:'Raleway',system-ui,sans-serif;
+  --max:1140px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--ivory);color:var(--ink);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:200;background:rgba(248,245,240,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border-camel);height:72px;display:flex;align-items:center;padding:0 5vw;justify-content:space-between}
+.nav__logo img{height:40px;width:auto}
+.nav__links{display:flex;align-items:center;gap:32px;list-style:none}
+.nav__links a{font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);transition:color .2s}
+.nav__links a:hover,.nav__links a.active{color:var(--navy)}
+.nav__cta{background:var(--navy)!important;color:var(--ivory)!important;padding:10px 24px!important;font-size:10px!important;font-weight:600!important;letter-spacing:.14em!important;text-transform:uppercase!important;transition:background .25s!important}
+.nav__cta:hover{background:var(--olive)!important;color:var(--ivory)!important}
+
+/* FOOTER -- light, mirrors nav */
+.footer{background:var(--ivory-dark);border-top:1px solid var(--border-camel);padding:72px 5vw 40px}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:56px;margin-bottom:56px;padding-bottom:56px;border-bottom:1px solid var(--border-camel)}
+.footer__logo img{height:44px;opacity:1;margin-bottom:20px}
+.footer__desc{font-family:var(--serif-b);font-size:13px;font-style:italic;color:var(--mid);line-height:1.9;max-width:240px}
+.footer-col h4{font-family:var(--sans);font-size:9px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--light);margin-bottom:18px}
+.footer-col a{display:block;font-family:var(--sans);font-size:13px;font-weight:400;color:var(--mid);padding:5px 0;transition:color .2s}
+.footer-col a:hover{color:var(--navy)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;font-family:var(--sans);font-size:11px;color:var(--light);letter-spacing:.03em}
+.footer-bottom a{color:var(--mid);transition:color .2s}
+.footer-bottom a:hover{color:var(--navy)}
+
+/* SHARED COMPONENTS */
+.eyebrow{font-family:var(--sans);font-size:10px;font-weight:500;letter-spacing:.20em;text-transform:uppercase;color:var(--brown);display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.eyebrow::before{content:'';display:inline-block;width:24px;height:1px;background:var(--camel-mid);flex-shrink:0}
+.eyebrow--light{color:rgba(209,196,167,.6)}
+.eyebrow--light::before{background:rgba(209,196,167,.4)}
+.eyebrow--center{justify-content:center}
+.eyebrow--center::before,.eyebrow--center::after{content:'';display:inline-block;width:24px;height:1px;background:var(--camel-mid)}
+.section-title{font-family:var(--serif-h);font-size:clamp(32px,3.8vw,52px);font-weight:400;line-height:1.1;letter-spacing:-.015em;color:var(--navy);margin-bottom:18px}
+.section-title em{font-style:italic;color:var(--brown)}
+.section-title--light{color:var(--ivory)}
+.section-title--light em{color:var(--camel)}
+.section-body{font-family:var(--serif-b);font-size:16px;color:var(--mid);line-height:1.95}
+.section-body p+p{margin-top:14px}
+.inner{max-width:var(--max);margin:0 auto}
+
+/* BUTTONS */
+.btn{display:inline-block;font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:14px 36px;transition:background .25s,opacity .2s}
+.btn--navy{background:var(--navy);color:var(--ivory)}
+.btn--navy:hover{background:var(--olive);color:var(--ivory)}
+.btn--ivory{background:var(--ivory);color:var(--navy)}
+.btn--ivory:hover{opacity:.88;color:var(--navy)}
+.btn--outline{background:transparent;color:var(--navy);border:1px solid var(--border-camel)}
+.btn--outline:hover{background:var(--camel-light);color:var(--navy)}
+.btn--outline-light{background:transparent;color:var(--camel);border:1px solid rgba(209,196,167,.3)}
+.btn--outline-light:hover{background:rgba(209,196,167,.08);color:var(--camel)}
+.btn--ghost{font-family:var(--serif-h);font-style:italic;font-size:17px;color:var(--brown);border-bottom:1px solid var(--border-camel);padding:0 0 3px;background:transparent;transition:color .2s,border-color .2s}
+.btn--ghost:hover{color:var(--navy);border-color:var(--camel-mid)}
+
+/* SECTION BG VARIANTS */
+.bg-ivory{background:var(--ivory)}
+.bg-ivory-dark{background:var(--ivory-dark)}
+.bg-camel{background:var(--camel-light)}
+.bg-navy{background:var(--navy)}
+.bg-olive{background:var(--olive)}
+
+/* OFFER PILLS -- used sitewide to label the three offers */
+.offer-pill{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:5px 14px;border-radius:1px}
+.offer-pill--free{background:rgba(62,77,58,.1);color:var(--olive);border:1px solid rgba(62,77,58,.2)}
+.offer-pill--paid{background:rgba(10,31,68,.08);color:var(--navy);border:1px solid rgba(10,31,68,.15)}
+.offer-pill--dfy{background:rgba(124,92,59,.08);color:var(--brown);border:1px solid rgba(124,92,59,.2)}
+
+@media(max-width:1024px){
+  .footer-top{grid-template-columns:1fr 1fr;gap:40px}
+  .nav__links{display:none}
+}
+@media(max-width:600px){.footer-top{grid-template-columns:1fr}}
+
+/* HERO */
+.ds-hero{background:var(--navy);padding:0;overflow:hidden;border-bottom:3px solid var(--camel-mid)}
+.ds-hero__inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;min-height:640px}
+.ds-hero__content{padding:80px 72px 80px 5vw;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:1}
+.ds-hero__badge{display:inline-flex;align-items:center;gap:10px;background:rgba(209,196,167,.1);border:1px solid rgba(209,196,167,.2);color:var(--camel);font-family:var(--sans);font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:7px 16px;margin-bottom:32px;width:fit-content}
+.ds-hero__h1{font-family:var(--serif-h);font-size:clamp(38px,5vw,64px);font-weight:400;line-height:1.08;color:var(--ivory);letter-spacing:-.02em;margin-bottom:10px}
+.ds-hero__h1 em{font-style:italic;color:var(--camel)}
+.ds-hero__price{font-family:var(--sans);font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:rgba(209,196,167,.5);margin-bottom:28px}
+.ds-hero__sub{font-family:var(--serif-b);font-size:17px;font-style:italic;color:rgba(248,245,240,.5);line-height:1.85;max-width:400px;margin-bottom:40px}
+.ds-hero__actions{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin-bottom:32px}
+.ds-hero__reassure{font-family:var(--serif-h);font-size:14px;font-style:italic;color:rgba(248,245,240,.25)}
+.ds-hero__image{position:relative;overflow:hidden}
+.ds-hero__img{width:100%;height:100%;object-fit:cover;object-position:center top;opacity:.6;filter:sepia(15%) contrast(1.08)}
+.ds-hero__img-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(10,31,68,.5),transparent 60%)}
+
+/* DISTINCTION */
+.distinction{background:var(--camel-light);padding:36px 5vw;border-bottom:1px solid var(--border-camel)}
+.distinction__inner{max-width:var(--max);margin:0 auto;display:flex;gap:40px;align-items:center;flex-wrap:wrap}
+.distinction__label{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mid);flex-shrink:0}
+.distinction__cards{display:flex;gap:14px;flex-wrap:wrap}
+.distinction__card{background:var(--ivory);border:1px solid var(--border-camel);padding:14px 22px}
+.distinction__card--active{border-color:var(--navy);background:var(--ivory-dark)}
+.distinction__card-label{font-family:var(--sans);font-size:11px;font-weight:600;color:var(--navy);letter-spacing:.03em;margin-bottom:2px}
+.distinction__card-desc{font-family:var(--serif-b);font-size:12px;font-style:italic;color:var(--mid)}
+
+/* WHAT YOU GET */
+.what{padding:96px 5vw;background:var(--ivory)}
+.what__inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.what__pull{font-family:var(--serif-h);font-size:24px;font-style:italic;font-weight:400;color:var(--navy);line-height:1.55;border-left:2px solid var(--camel-mid);padding-left:24px;margin-bottom:36px}
+.includes-list{list-style:none}
+.includes-list li{font-family:var(--serif-b);font-size:15px;font-style:italic;color:var(--mid);padding:14px 0;border-bottom:1px solid var(--border-camel);display:flex;gap:14px;line-height:1.6}
+.includes-list li:first-child{border-top:1px solid var(--border-camel)}
+.includes-list li::before{content:'\2713';color:var(--olive);font-family:var(--sans);font-style:normal;font-weight:600;flex-shrink:0;font-size:12px;margin-top:2px}
+.investment-card{background:var(--navy);padding:52px 48px}
+.investment-card__label{font-family:var(--sans);font-size:9px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(209,196,167,.4);margin-bottom:16px}
+.investment-card__price{font-family:var(--serif-h);font-size:64px;font-weight:400;color:var(--ivory);line-height:1;margin-bottom:6px}
+.investment-card__duration{font-family:var(--sans);font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:rgba(209,196,167,.45);margin-bottom:28px}
+.investment-card__divider{height:1px;background:rgba(209,196,167,.12);margin:28px 0}
+.investment-card__note{font-family:var(--serif-b);font-size:14px;font-style:italic;color:rgba(248,245,240,.4);line-height:1.75;margin-bottom:32px}
+.investment-card__cta{display:block;background:var(--ivory);color:var(--navy);padding:14px 24px;font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-align:center;transition:opacity .2s;margin-bottom:14px}
+.investment-card__cta:hover{opacity:.88;color:var(--navy)}
+.investment-card__secondary{display:block;font-family:var(--serif-h);font-style:italic;font-size:14px;color:rgba(209,196,167,.4);text-align:center;transition:color .2s}
+.investment-card__secondary:hover{color:rgba(209,196,167,.75)}
+
+/* WHO THIS IS FOR */
+.who{padding:80px 5vw;background:var(--camel-light)}
+.who__inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.who-list{list-style:none;margin-top:36px}
+.who-item{display:flex;gap:18px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--border-camel)}
+.who-item:first-child{border-top:1px solid var(--border-camel)}
+.who-item__dot{flex-shrink:0;width:6px;height:6px;border-radius:50%;background:var(--camel-mid);margin-top:10px}
+.who-item__title{font-family:var(--sans);font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px}
+.who-item__desc{font-family:var(--serif-b);font-size:13px;font-style:italic;color:var(--mid);line-height:1.65}
+
+/* HOW IT WORKS */
+.how{padding:80px 5vw;background:var(--olive)}
+.how__inner{max-width:var(--max);margin:0 auto}
+.how__steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid rgba(209,196,167,.15);overflow:hidden;margin-top:56px}
+.how__step{padding:44px 32px;border-right:1px solid rgba(209,196,167,.1)}
+.how__step:last-child{border-right:none}
+.how__num{font-family:var(--serif-h);font-size:52px;font-weight:400;color:rgba(209,196,167,.12);line-height:1;margin-bottom:18px}
+.how__title{font-family:var(--serif-h);font-size:20px;font-weight:400;color:var(--ivory);margin-bottom:10px}
+.how__desc{font-family:var(--serif-b);font-size:13px;font-style:italic;color:rgba(248,245,240,.4);line-height:1.75}
+
+/* BOOKING */
+.booking{padding:96px 5vw;background:var(--ivory-dark)}
+.booking__inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr 420px;gap:80px;align-items:start}
+.booking__content{}
+.booking__content-body{font-family:var(--serif-b);font-size:16px;color:var(--mid);line-height:1.95;margin-bottom:36px}
+.booking__content-body p+p{margin-top:14px}
+.booking__nudge{background:var(--ivory);border:1px solid var(--border-camel);padding:32px 28px;margin-top:32px}
+.booking__nudge-label{font-family:var(--sans);font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--mid);margin-bottom:10px}
+.booking__nudge-title{font-family:var(--serif-h);font-size:18px;font-weight:400;color:var(--navy);margin-bottom:8px}
+.booking__nudge-desc{font-family:var(--serif-b);font-size:13px;font-style:italic;color:var(--mid);line-height:1.7;margin-bottom:16px}
+.booking__nudge-link{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);border-bottom:1px solid var(--border-camel);padding-bottom:2px;display:inline-flex;gap:8px;transition:gap .2s,color .2s}
+.booking__nudge-link:hover{gap:13px;color:var(--brown)}
+.booking__calendar{position:sticky;top:100px}
+.calendar-header{background:var(--navy);padding:28px 32px}
+.calendar-header__title{font-family:var(--serif-h);font-size:20px;font-weight:400;color:var(--ivory);margin-bottom:4px}
+.calendar-header__sub{font-family:var(--serif-b);font-size:12px;font-style:italic;color:rgba(209,196,167,.45)}
+.calendar-frame{border:1px solid var(--border-camel);border-top:none;overflow:hidden}
+.calendar-frame iframe{display:block;width:100%;min-height:680px;border:none}
+
+@media(max-width:1024px){
+  .ds-hero__inner,.what__inner,.who__inner,.booking__inner{grid-template-columns:1fr;gap:48px}
+  .ds-hero__image{height:55vw}
+  .how__steps{grid-template-columns:1fr 1fr}
+  .booking__calendar{position:static}
+  .distinction__inner{flex-direction:column;gap:16px}
+}
+@media(max-width:600px){.how__steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/"><img src="https://assets.cdn.filesafe.space/erNBMEPHr5mwBKO660ir/media/693b11a65b7f645e8fd3a4ef.png" alt="Tyche Digital Agency" style="height:40px"></a>
+  <ul class="nav__links">
+    <li><a href="/services">Services</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/direction-session" class="active">Direction Session</a></li>
+    <li><a href="/faq">FAQ</a></li>
+    <li><a href="/alignment">Free Diagnostic</a></li>
+    <li><a href="/book" class="nav__cta">Free Strategy Call</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="ds-hero">
+  <div class="ds-hero__inner" style="max-width:100%">
+    <div class="ds-hero__content">
+      <span class="ds-hero__badge">Paid Diagnostic &middot; Not the Free Strategy Call</span>
+      <h1 class="ds-hero__h1">Direction Session<br><em>Business Second Opinion</em></h1>
+      <p class="ds-hero__price">$500 &middot; 60 Minutes &middot; With Veronica Dietz</p>
+      <p class="ds-hero__sub">A focused session to find the one structural issue generating most of your downstream problems and map the specific next moves to address it.</p>
+      <div class="ds-hero__actions">
+        <a href="#booking" class="btn btn--ivory">Book a Direction Session</a>
+        <a href="/alignment" class="btn--ghost" style="color:rgba(209,196,167,.6);border-color:rgba(209,196,167,.2);font-size:15px">Not sure? Try the free diagnostic first</a>
+      </div>
+      <p class="ds-hero__reassure">Written summary included. No follow-up pitch. No obligation to continue.</p>
+    </div>
+    <div class="ds-hero__image">
+      <img class="ds-hero__img" src="https://assets.cdn.filesafe.space/erNBMEPHr5mwBKO660ir/media/6902a1cf12e9016158034656.jpeg" alt="Veronica Dietz, Tyche Digital Agency">
+      <div class="ds-hero__img-overlay"></div>
+    </div>
+  </div>
+</div>
+
+<!-- DISTINCTION BAR -->
+<div class="distinction">
+  <div class="distinction__inner">
+    <p class="distinction__label">Know your options</p>
+    <div class="distinction__cards">
+      <div class="distinction__card distinction__card--active">
+        <div class="distinction__card-label">Direction Session &larr; You are here</div>
+        <div class="distinction__card-desc">Paid diagnostic. $500. 60 minutes.</div>
+      </div>
+      <div class="distinction__card">
+        <div class="distinction__card-label"><a href="/book" style="color:var(--navy)">Free Strategy Call &rarr;</a></div>
+        <div class="distinction__card-desc">Discovery call for done-for-you inquiries. Free.</div>
+      </div>
+      <div class="distinction__card">
+        <div class="distinction__card-label"><a href="/alignment" style="color:var(--navy)">Check Your Alignment &rarr;</a></div>
+        <div class="distinction__card-desc">Free self-diagnosis. PDF by email.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT YOU GET -->
+<section class="what">
+  <div class="what__inner inner">
+    <div>
+      <p class="eyebrow">What This Session Is</p>
+      <h2 class="section-title">A diagnostic, not<br>a <em>strategy session.</em></h2>
+      <p class="section-body">Most strategy sessions end with a list of things to do. A Direction Session ends with a specific identification of what is structurally wrong and why, so you know exactly which thing to fix first and what to stop doing entirely.</p>
+      <blockquote class="what__pull">You leave knowing what is wrong, what to do about it, and in what order. That is the product.</blockquote>
+      <ul class="includes-list">
+        <li>Pre-session intake so no paid time is spent on background</li>
+        <li>60-minute diagnostic session with Veronica Dietz directly</li>
+        <li>Identification of the primary load-bearing issue in your business</li>
+        <li>Prioritized next moves you can implement immediately</li>
+        <li>Written session summary delivered after the call</li>
+        <li>No follow-up retainer required or implied</li>
+        <li>No pitch at the end of the session</li>
+      </ul>
+    </div>
+    <div>
+      <div class="investment-card">
+        <p class="investment-card__label">Investment</p>
+        <div class="investment-card__price">$500</div>
+        <div class="investment-card__duration">60 Minutes &middot; One-Time</div>
+        <div class="investment-card__divider"></div>
+        <p class="investment-card__note">This is a standalone session. Some clients leave and implement everything themselves. Others decide they want done-for-you support after. Either is completely fine and there is no obligation attached to the session.</p>
+        <a href="#booking" class="investment-card__cta">Book Your Direction Session</a>
+        <a href="/faq#direction-session" class="investment-card__secondary">Read the FAQ first</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO THIS IS FOR -->
+<section class="who">
+  <div class="who__inner inner">
+    <div>
+      <p class="eyebrow">Who This Is For</p>
+      <h2 class="section-title">Right for you <em>if.</em></h2>
+      <ul class="who-list">
+        <div class="who-item"><div class="who-item__dot"></div><div><div class="who-item__title">Something is off but you cannot name exactly what</div><div class="who-item__desc">You know the results are not where they should be. You are not sure why.</div></div></div>
+        <div class="who-item"><div class="who-item__dot"></div><div><div class="who-item__title">You have tried things and they are not compounding</div><div class="who-item__desc">More content, different platforms, various tactics. The leads are still inconsistent.</div></div></div>
+        <div class="who-item"><div class="who-item__dot"></div><div><div class="who-item__title">You want clarity before investing more</div><div class="who-item__desc">Before hiring, building, or spending more, you want to know what actually needs fixing.</div></div></div>
+        <div class="who-item"><div class="who-item__dot"></div><div><div class="who-item__title">You want a second opinion on your direction</div><div class="who-item__desc">You have a plan. You want someone to look at it honestly and tell you if it is the right one.</div></div></div>
+      </ul>
+    </div>
+    <div>
+      <p class="eyebrow">Not Right for You If</p>
+      <h2 class="section-title">This is probably <em>not the fit</em> if.</h2>
+      <ul class="who-list">
+        <div class="who-item"><div class="who-item__dot"></div><div><div class="who-item__title">You already know what you need built</div><div class="who-item__desc">If you are ready for done-for-you implementation, book a free strategy call instead.</div></div></div>
+        <div class="who-item"><div class="who-item__dot"></div><div><div class="who-item__title">You need results within 72 hours</div><div class="who-item__desc">A Direction Session produces clarity and a plan. Execution comes after.</div></div></div>
+        <div class="who-item"><div class="who-item__dot"></div><div><div class="who-item__title">You want a free self-diagnosis first</div><div class="who-item__desc">Check Your Alignment is free and takes five minutes. Start there if you are not yet sure.</div></div></div>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+  <div class="how__inner inner">
+    <p class="eyebrow eyebrow--light">How It Works</p>
+    <h2 class="section-title section-title--light">What happens<br><em>before, during, and after.</em></h2>
+    <div class="how__steps">
+      <div class="how__step"><div class="how__num">01</div><div class="how__title">You book and complete intake</div><p class="how__desc">After booking you receive a short intake form. We review it before the session so no paid time is spent on background.</p></div>
+      <div class="how__step"><div class="how__num">02</div><div class="how__title">60-minute diagnostic session</div><p class="how__desc">We identify the load-bearing issue. We map next moves in priority order. You ask questions. We are direct.</p></div>
+      <div class="how__step"><div class="how__num">03</div><div class="how__title">Written summary delivered</div><p class="how__desc">You receive a written summary of findings and recommended next actions within 24 hours of the session.</p></div>
+      <div class="how__step"><div class="how__num">04</div><div class="how__title">You decide what to do next</div><p class="how__desc">Implement yourself, engage Tyche for done-for-you work, or take the clarity and run with it. All three are valid.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking" id="booking">
+  <div class="booking__inner inner">
+    <div class="booking__content">
+      <p class="eyebrow">Book Your Session</p>
+      <h2 class="section-title">Ready to find what<br>is <em>actually wrong?</em></h2>
+      <div class="booking__content-body">
+        <p>Select a time below. After booking you will receive a confirmation and a short intake form. The intake takes about ten minutes and makes the session significantly more focused and useful.</p>
+        <p>The session is $500, billed at booking. If for any reason the session does not happen, we will reschedule or refund. No exceptions needed.</p>
+      </div>
+      <div class="booking__nudge">
+        <p class="booking__nudge-label">Not ready for this yet?</p>
+        <h3 class="booking__nudge-title">Start with something free</h3>
+        <p class="booking__nudge-desc">Check Your Alignment is a free five-minute diagnostic that will tell you where to focus right now. Or book a free strategy call if you are interested in done-for-you implementation.</p>
+        <a href="/alignment" class="booking__nudge-link">Free diagnostic &rarr;</a>
+        &nbsp;&nbsp;
+        <a href="/book" class="booking__nudge-link" style="margin-left:16px">Free strategy call &rarr;</a>
+      </div>
+    </div>
+    <div class="booking__calendar">
+      <div class="calendar-header">
+        <div class="calendar-header__title">Book a Direction Session</div>
+        <div class="calendar-header__sub">$500 &middot; 60 minutes &middot; With Veronica Dietz</div>
+      </div>
+      <div class="calendar-frame">
+        <iframe src="https://the.veronicadietz.com/widget/booking/rAmETPD43hKrW3J3BsJv" style="width:100%;border:none;overflow:hidden;min-height:680px" scrolling="no" title="Book a Direction Session"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://the.veronicadietz.com/js/form_embed.js" type="text/javascript"></script>
+
+<footer class="footer">
+  <div class="footer-top inner">
+    <div><div class="footer__logo"><img src="https://assets.cdn.filesafe.space/erNBMEPHr5mwBKO660ir/media/693b11a65b7f645e8fd3a4ef.png" alt="Tyche Digital Agency"></div><p class="footer__desc">Marketing systems for service businesses that want leads without manufacturing momentum every week.</p></div>
+    <div class="footer-col"><h4>Work With Us</h4><a href="/book">Free Strategy Call</a><a href="/direction-session">Direction Session &mdash; $500</a><a href="/alignment">Check Your Alignment</a><a href="/services">All Services</a></div>
+    <div class="footer-col"><h4>Resources</h4><a href="https://tychedigitalagency.blogspot.com/" target="_blank">The Direction Journal</a><a href="/faq">FAQ</a><a href="https://go.veronicadietz.com/magnetic-messaging-mini-guide-2200" target="_blank">Magnetic Messaging</a><a href="https://go.tychedigitalagency.net/investment-guide" target="_blank">Investment Guide</a></div>
+    <div class="footer-col"><h4>Company</h4><a href="/about">About Veronica</a><a href="https://share.google/3Jh5pTQkHRGIj3X5I" target="_blank">VD Advisory Group</a><a href="https://go.tychedigitalagency.net/contact" target="_blank">Contact</a><a href="https://go.tychedigitalagency.net/privacy-policy" target="_blank">Privacy Policy</a><a href="https://go.tychedigitalagency.net/terms-and-conditions" target="_blank">Terms</a></div>
+  </div>
+  <div class="footer-bottom inner"><span>&copy; 2026 Tyche Digital Agency &middot; Founded by <a href="https://share.google/3Jh5pTQkHRGIj3X5I" target="_blank">Veronica Dietz</a></span><a href="https://go.tychedigitalagency.net/terms-and-conditions" target="_blank">Terms</a></div>
+</footer>
+
+</body>
+</html>
