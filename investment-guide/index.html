@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 Investment Guide | Tyche Digital Agency</title>
+<meta name="description" content="Download the Tyche Digital Agency 2026 Investment and Service Guide. See all services, starting investments, and find the right entry point for your business.">
+<link rel="icon" href="https://assets.cdn.filesafe.space/erNBMEPHr5mwBKO660ir/media/695ea829a0a48408c7196071.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Libre+Baskerville:ital,wght@0,400;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ivory:#F8F5F0;--ivory-dark:#F0EBE3;--navy:#0A1F44;
+  --brown:#7C5C3B;--olive:#3E4D3A;--camel:#D1C4A7;
+  --camel-mid:#B8A98A;--camel-light:#EDE5D4;
+  --ink:#1A1610;--mid:#6B6156;--light:#9A9088;
+  --border-camel:rgba(184,169,138,0.40);
+  --serif-h:'Playfair Display',Georgia,serif;
+  --serif-b:'Libre Baskerville',Georgia,serif;
+  --sans:'Raleway',system-ui,sans-serif;
+  --max:1140px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--ivory);color:var(--ink);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:200;background:rgba(248,245,240,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border-camel);height:72px;display:flex;align-items:center;padding:0 5vw;justify-content:space-between}
+.nav__logo img{height:40px;width:auto}
+.nav__links{display:flex;align-items:center;gap:32px;list-style:none}
+.nav__links a{font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);transition:color .2s}
+.nav__links a:hover,.nav__links a.active{color:var(--navy)}
+.nav__cta{background:var(--navy)!important;color:var(--ivory)!important;padding:10px 24px!important;font-size:10px!important;font-weight:600!important;letter-spacing:.14em!important;text-transform:uppercase!important;transition:background .25s!important}
+.nav__cta:hover{background:var(--olive)!important;color:var(--ivory)!important}
+
+/* FOOTER -- light, mirrors nav */
+.footer{background:var(--ivory-dark);border-top:1px solid var(--border-camel);padding:72px 5vw 40px}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:56px;margin-bottom:56px;padding-bottom:56px;border-bottom:1px solid var(--border-camel)}
+.footer__logo img{height:44px;opacity:1;margin-bottom:20px}
+.footer__desc{font-family:var(--serif-b);font-size:13px;font-style:italic;color:var(--mid);line-height:1.9;max-width:240px}
+.footer-col h4{font-family:var(--sans);font-size:9px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--light);margin-bottom:18px}
+.footer-col a{display:block;font-family:var(--sans);font-size:13px;font-weight:400;color:var(--mid);padding:5px 0;transition:color .2s}
+.footer-col a:hover{color:var(--navy)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;font-family:var(--sans);font-size:11px;color:var(--light);letter-spacing:.03em}
+.footer-bottom a{color:var(--mid);transition:color .2s}
+.footer-bottom a:hover{color:var(--navy)}
+
+/* SHARED COMPONENTS */
+.eyebrow{font-family:var(--sans);font-size:10px;font-weight:500;letter-spacing:.20em;text-transform:uppercase;color:var(--brown);display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.eyebrow::before{content:'';display:inline-block;width:24px;height:1px;background:var(--camel-mid);flex-shrink:0}
+.eyebrow--light{color:rgba(209,196,167,.6)}
+.eyebrow--light::before{background:rgba(209,196,167,.4)}
+.eyebrow--center{justify-content:center}
+.eyebrow--center::before,.eyebrow--center::after{content:'';display:inline-block;width:24px;height:1px;background:var(--camel-mid)}
+.section-title{font-family:var(--serif-h);font-size:clamp(32px,3.8vw,52px);font-weight:400;line-height:1.1;letter-spacing:-.015em;color:var(--navy);margin-bottom:18px}
+.section-title em{font-style:italic;color:var(--brown)}
+.section-title--light{color:var(--ivory)}
+.section-title--light em{color:var(--camel)}
+.section-body{font-family:var(--serif-b);font-size:16px;color:var(--mid);line-height:1.95}
+.section-body p+p{margin-top:14px}
+.inner{max-width:var(--max);margin:0 auto}
+
+/* BUTTONS */
+.btn{display:inline-block;font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:14px 36px;transition:background .25s,opacity .2s}
+.btn--navy{background:var(--navy);color:var(--ivory)}
+.btn--navy:hover{background:var(--olive);color:var(--ivory)}
+.btn--ivory{background:var(--ivory);color:var(--navy)}
+.btn--ivory:hover{opacity:.88;color:var(--navy)}
+.btn--outline{background:transparent;color:var(--navy);border:1px solid var(--border-camel)}
+.btn--outline:hover{background:var(--camel-light);color:var(--navy)}
+.btn--outline-light{background:transparent;color:var(--camel);border:1px solid rgba(209,196,167,.3)}
+.btn--outline-light:hover{background:rgba(209,196,167,.08);color:var(--camel)}
+.btn--ghost{font-family:var(--serif-h);font-style:italic;font-size:17px;color:var(--brown);border-bottom:1px solid var(--border-camel);padding:0 0 3px;background:transparent;transition:color .2s,border-color .2s}
+.btn--ghost:hover{color:var(--navy);border-color:var(--camel-mid)}
+
+/* SECTION BG VARIANTS */
+.bg-ivory{background:var(--ivory)}
+.bg-ivory-dark{background:var(--ivory-dark)}
+.bg-camel{background:var(--camel-light)}
+.bg-navy{background:var(--navy)}
+.bg-olive{background:var(--olive)}
+
+/* OFFER PILLS -- used sitewide to label the three offers */
+.offer-pill{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:5px 14px;border-radius:1px}
+.offer-pill--free{background:rgba(62,77,58,.1);color:var(--olive);border:1px solid rgba(62,77,58,.2)}
+.offer-pill--paid{background:rgba(10,31,68,.08);color:var(--navy);border:1px solid rgba(10,31,68,.15)}
+.offer-pill--dfy{background:rgba(124,92,59,.08);color:var(--brown);border:1px solid rgba(124,92,59,.2)}
+
+@media(max-width:1024px){
+  .footer-top{grid-template-columns:1fr 1fr;gap:40px}
+  .nav__links{display:none}
+}
+@media(max-width:600px){.footer-top{grid-template-columns:1fr}}
+
+/* HERO -- two column */
+.hero{min-height:96vh;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;border-bottom:3px solid var(--camel-mid)}
+
+/* LEFT: dark, credibility and framing */
+.hero__left{
+  background:var(--navy);
+  padding:10vh 6vw 10vh 5vw;
+  display:flex;flex-direction:column;justify-content:center;
+  position:relative;overflow:hidden;
+}
+.hero__left::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,transparent,var(--camel-mid),transparent);opacity:.5}
+.hero__badge{display:inline-flex;align-items:center;gap:10px;background:rgba(209,196,167,.1);border:1px solid rgba(209,196,167,.2);color:var(--camel);font-family:var(--sans);font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:7px 16px;margin-bottom:32px;width:fit-content}
+.hero__h1{font-family:var(--serif-h);font-size:clamp(36px,4.5vw,58px);font-weight:400;line-height:1.1;color:var(--ivory);letter-spacing:-.02em;margin-bottom:16px}
+.hero__h1 em{font-style:italic;color:var(--camel)}
+.hero__sub{font-family:var(--serif-b);font-size:17px;font-style:italic;color:rgba(248,245,240,.5);line-height:1.85;max-width:400px;margin-bottom:36px}
+.hero__divider{height:1px;background:rgba(209,196,167,.12);margin:36px 0}
+
+/* What the guide includes */
+.guide-includes__label{font-family:var(--sans);font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:rgba(209,196,167,.4);margin-bottom:18px}
+.guide-includes__list{list-style:none}
+.guide-includes__list li{font-family:var(--serif-b);font-size:15px;font-style:italic;color:rgba(248,245,240,.6);padding:11px 0;border-bottom:1px solid rgba(209,196,167,.08);display:flex;gap:14px;align-items:flex-start;line-height:1.55}
+.guide-includes__list li:last-child{border-bottom:none}
+.guide-includes__list li::before{content:'\2192';color:var(--camel);font-family:var(--sans);font-style:normal;font-weight:600;font-size:13px;flex-shrink:0;margin-top:1px}
+
+/* Reframe note */
+.reframe{background:rgba(209,196,167,.08);border:1px solid rgba(209,196,167,.15);border-left:3px solid var(--camel-mid);padding:24px 28px;margin-top:36px}
+.reframe__text{font-family:var(--serif-h);font-size:17px;font-style:italic;color:rgba(248,245,240,.75);line-height:1.6}
+
+/* RIGHT: form */
+.hero__right{
+  background:var(--ivory);
+  padding:8vh 5vw;
+  display:flex;flex-direction:column;justify-content:center;
+  border-left:1px solid var(--border-camel);
+}
+.form-header{margin-bottom:32px}
+.form-eyebrow{font-family:var(--sans);font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--brown);display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.form-eyebrow::before{content:'';display:inline-block;width:24px;height:1px;background:var(--camel-mid);flex-shrink:0}
+.form-title{font-family:var(--serif-h);font-size:clamp(24px,2.8vw,38px);font-weight:400;color:var(--navy);line-height:1.2;margin-bottom:8px}
+.form-title em{font-style:italic;color:var(--brown)}
+.form-sub{font-family:var(--serif-b);font-size:14px;font-style:italic;color:var(--mid);line-height:1.75}
+.form-wrap{background:var(--ivory-dark);border:1px solid var(--border-camel);padding:36px 32px}
+.form-wrap iframe{display:block;width:100%;min-height:500px;border:none}
+.form-note{margin-top:14px;font-family:var(--serif-b);font-size:12px;font-style:italic;color:var(--light);text-align:center;line-height:1.65}
+
+/* REFRAME SECTION -- the psychology pivot */
+.pivot{padding:96px 5vw;background:var(--camel-light);border-top:1px solid var(--border-camel)}
+.pivot__inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.pivot__pull{font-family:var(--serif-h);font-size:26px;font-style:italic;font-weight:400;color:var(--navy);line-height:1.55;border-left:2px solid var(--camel-mid);padding-left:28px;margin-bottom:28px}
+.pivot__body{font-family:var(--serif-b);font-size:16px;color:var(--mid);line-height:1.95}
+.pivot__body p+p{margin-top:14px}
+.problem-list{margin-top:36px;list-style:none}
+.problem-item{display:flex;gap:18px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--border-camel)}
+.problem-item:first-child{border-top:1px solid var(--border-camel)}
+.problem-item__dot{flex-shrink:0;width:6px;height:6px;border-radius:50%;background:var(--camel-mid);margin-top:10px}
+.problem-item__title{font-family:var(--sans);font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px}
+.problem-item__desc{font-family:var(--serif-b);font-size:13px;font-style:italic;color:var(--mid);line-height:1.65}
+
+/* THREE OPTIONS -- presented after the reframe */
+.options{padding:96px 5vw;background:var(--ivory)}
+.options__inner{max-width:1100px;margin:0 auto}
+.options__header{margin-bottom:64px}
+.options__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border-camel);border:1px solid var(--border-camel);overflow:hidden}
+.option-card{background:var(--ivory);padding:48px 36px;display:flex;flex-direction:column;transition:background .3s;position:relative;overflow:hidden}
+.option-card:hover{background:var(--camel-light)}
+.option-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.option-card--a::before{background:var(--olive)}
+.option-card--b::before{background:var(--navy)}
+.option-card--c::before{background:var(--brown)}
+.option-card:hover::before{transform:scaleX(1)}
+.option-card__pill{margin-bottom:20px}
+.option-card__title{font-family:var(--serif-h);font-size:26px;font-weight:400;color:var(--navy);margin-bottom:6px;line-height:1.2}
+.option-card__price{font-family:var(--sans);font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);margin-bottom:18px}
+.option-card__desc{font-family:var(--serif-b);font-size:14px;font-style:italic;color:var(--mid);line-height:1.8;flex:1;margin-bottom:32px}
+.option-card__cta{display:inline-block;font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);border-bottom:1px solid var(--border-camel);padding-bottom:3px;transition:gap .2s,color .2s,border-color .2s;display:inline-flex;gap:8px}
+.option-card:hover .option-card__cta{gap:14px;color:var(--brown);border-color:var(--camel-mid)}
+
+/* STRATEGY CALL SECTION */
+.strategy{padding:96px 5vw;background:var(--ivory-dark);border-top:1px solid var(--border-camel)}
+.strategy__inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 420px;gap:80px;align-items:start}
+.strategy__content{}
+.strategy__lead{font-family:var(--serif-h);font-size:22px;font-style:italic;font-weight:400;color:var(--navy);line-height:1.55;border-left:2px solid var(--camel-mid);padding-left:24px;margin-bottom:28px}
+.strategy__body{font-family:var(--serif-b);font-size:16px;color:var(--mid);line-height:1.95;margin-bottom:28px}
+.strategy__body p+p{margin-top:14px}
+.what-list{list-style:none;margin-bottom:36px}
+.what-item{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--border-camel)}
+.what-item:first-child{border-top:1px solid var(--border-camel)}
+.what-item::before{content:'\2713';color:var(--olive);font-family:var(--sans);font-weight:600;font-size:12px;flex-shrink:0;margin-top:3px}
+.what-item__text{font-family:var(--serif-b);font-size:14px;font-style:italic;color:var(--mid);line-height:1.6}
+.strategy__calendar{}
+.cal-header{background:var(--navy);padding:28px 32px}
+.cal-header__badge{font-family:var(--sans);font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(209,196,167,.4);margin-bottom:8px}
+.cal-header__title{font-family:var(--serif-h);font-size:20px;font-weight:400;color:var(--ivory);margin-bottom:4px}
+.cal-header__sub{font-family:var(--serif-b);font-size:12px;font-style:italic;color:rgba(209,196,167,.45)}
+.cal-frame{border:1px solid var(--border-camel);border-top:none;overflow:hidden}
+.cal-frame iframe{display:block;width:100%;min-height:680px;border:none}
+.cal-note{margin-top:14px;font-family:var(--serif-b);font-size:12px;font-style:italic;color:var(--light);text-align:center}
+
+/* DS NUDGE */
+.ds-nudge{background:var(--navy);padding:64px 5vw;border-top:1px solid rgba(209,196,167,.1)}
+.ds-nudge__inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.ds-nudge__content{}
+.ds-nudge__pill{margin-bottom:18px}
+.ds-nudge__title{font-family:var(--serif-h);font-size:clamp(26px,3vw,40px);font-weight:400;color:var(--ivory);line-height:1.2;margin-bottom:14px}
+.ds-nudge__title em{font-style:italic;color:var(--camel)}
+.ds-nudge__body{font-family:var(--serif-b);font-size:16px;font-style:italic;color:rgba(248,245,240,.5);line-height:1.85;margin-bottom:28px}
+.ds-nudge__list{list-style:none;margin-bottom:32px}
+.ds-nudge__list li{font-family:var(--serif-b);font-size:14px;font-style:italic;color:rgba(248,245,240,.55);padding:10px 0;border-bottom:1px solid rgba(209,196,167,.08);display:flex;gap:14px;line-height:1.6}
+.ds-nudge__list li:last-child{border-bottom:none}
+.ds-nudge__list li::before{content:'\2713';color:var(--camel);font-family:var(--sans);font-style:normal;font-weight:600;font-size:11px;flex-shrink:0;margin-top:2px}
+.ds-nudge__card{background:rgba(248,245,240,.05);border:1px solid rgba(209,196,167,.15);padding:44px 40px}
+.ds-nudge__card-price{font-family:var(--serif-h);font-size:56px;font-weight:400;color:var(--ivory);line-height:1;margin-bottom:4px}
+.ds-nudge__card-duration{font-family:var(--sans);font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:rgba(209,196,167,.4);margin-bottom:20px}
+.ds-nudge__card-body{font-family:var(--serif-b);font-size:14px;font-style:italic;color:rgba(248,245,240,.4);line-height:1.75;margin-bottom:28px}
+.ds-nudge__card-cta{display:block;background:var(--ivory);color:var(--navy);padding:14px 24px;font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-align:center;transition:opacity .2s;margin-bottom:12px}
+.ds-nudge__card-cta:hover{opacity:.88;color:var(--navy)}
+.ds-nudge__card-secondary{display:block;font-family:var(--serif-h);font-style:italic;font-size:14px;color:rgba(209,196,167,.35);text-align:center;transition:color .2s}
+.ds-nudge__card-secondary:hover{color:rgba(209,196,167,.7)}
+
+@media(max-width:1024px){
+  .hero,.options__grid{grid-template-columns:1fr}
+  .hero__left{padding:64px 5vw}
+  .hero__right{padding:64px 5vw}
+  .pivot__inner,.strategy__inner,.ds-nudge__inner{grid-template-columns:1fr;gap:48px}
+  .strategy__calendar{position:static}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/"><img src="https://assets.cdn.filesafe.space/erNBMEPHr5mwBKO660ir/media/693b11a65b7f645e8fd3a4ef.png" alt="Tyche Digital Agency" style="height:40px"></a>
+  <ul class="nav__links">
+    <li><a href="/services">Services</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/direction-session">Direction Session</a></li>
+    <li><a href="/faq">FAQ</a></li>
+    <li><a href="/alignment">Free Diagnostic</a></li>
+    <li><a href="/book" class="nav__cta">Free Strategy Call</a></li>
+  </ul>
+</nav>
+
+<!-- HERO: form + framing -->
+<div class="hero">
+
+  <div class="hero__left">
+    <span class="hero__badge">2026 Investment + Service Guide</span>
+    <h1 class="hero__h1">Before you look<br>at the numbers,<br><em>read this.</em></h1>
+    <p class="hero__sub">The guide answers what things cost. But knowing the price is only useful once you know what you actually need. Most people who download this realize the real question is not about pricing.</p>
+    <div class="hero__divider"></div>
+    <p class="guide-includes__label">What the guide covers</p>
+    <ul class="guide-includes__list">
+      <li>Every Tyche service and its starting investment</li>
+      <li>The difference between each entry point</li>
+      <li>When a Direction Session should come before implementation</li>
+      <li>What done-for-you work actually looks like</li>
+      <li>How to choose the right starting point for where you are</li>
+    </ul>
+    <div class="reframe">
+      <p class="reframe__text">"Most people who ask about pricing already know they need help. The real question is whether they are solving the right problem."</p>
+    </div>
+  </div>
+
+  <div class="hero__right">
+    <div class="form-header">
+      <p class="form-eyebrow">Free Download</p>
+      <h2 class="form-title">Download the<br><em>Investment Guide</em></h2>
+      <p class="form-sub">Enter your email and we will send it directly. You will also receive a short follow-up with context on choosing the right starting point.</p>
+    </div>
+    <div class="form-wrap">
+      <iframe
+        src="https://the.veronicadietz.com/widget/form/VthRWESO8zWGGsCP7h72"
+        style="width:100%;min-height:500px;border:none;border-radius:3px"
+        id="inline-VthRWESO8zWGGsCP7h72"
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="Download 2026 Investment Guide"
+        data-height="563"
+        data-layout-iframe-id="inline-VthRWESO8zWGGsCP7h72"
+        data-form-id="VthRWESO8zWGGsCP7h72"
+        title="Download 2026 Investment Guide">
+      </iframe>
+    </div>
+    <p class="form-note">No spam. Unsubscribe any time. The guide is delivered immediately.</p>
+  </div>
+
+</div>
+
+<script src="https://the.veronicadietz.com/js/form_embed.js"></script>
+
+<!-- REFRAME: the pivot -->
+<section class="pivot">
+  <div class="pivot__inner">
+    <div>
+      <p class="eyebrow">Before You Decide on Investment</p>
+      <h2 class="section-title">The guide tells you<br>what things cost.<br><em>It doesn't tell you what you need.</em></h2>
+      <blockquote class="pivot__pull">Knowing a price without knowing what is wrong is like knowing the cost of surgery before knowing what needs to be operated on.</blockquote>
+      <div class="pivot__body">
+        <p>Most businesses that download the investment guide are trying to answer one of two questions: "Can I afford this?" or "Is this worth it?" Both are the wrong first question.</p>
+        <p>The right first question is: what is the one structural issue generating most of my downstream drag? Once that is identified, the investment almost always becomes obvious. And it is often significantly less than people expect.</p>
+        <p>That is why every path at Tyche starts with diagnosis, not price.</p>
+      </div>
+    </div>
+    <div>
+      <p class="eyebrow">Signs You Need Diagnosis Before Investment</p>
+      <ul class="problem-list">
+        <div class="problem-item"><div class="problem-item__dot"></div><div><div class="problem-item__title">You are not sure what is actually wrong</div><div class="problem-item__desc">Something is off but you cannot name it precisely. Spending on implementation before knowing what to fix is expensive.</div></div></div>
+        <div class="problem-item"><div class="problem-item__dot"></div><div><div class="problem-item__title">You have invested before and it did not compound</div><div class="problem-item__desc">Previous agency or freelancer work did not produce the expected results. The structural issue was likely never addressed.</div></div></div>
+        <div class="problem-item"><div class="problem-item__dot"></div><div><div class="problem-item__title">You have too many things competing for your attention</div><div class="problem-item__desc">Every service sounds relevant. You are not sure what to prioritize. That is a clarity problem, not a budget problem.</div></div></div>
+        <div class="problem-item"><div class="problem-item__dot"></div><div><div class="problem-item__title">You want to make sure you are solving the right problem</div><div class="problem-item__desc">You are thoughtful about where you invest. You want a second opinion before committing to anything.</div></div></div>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- THREE OPTIONS -->
+<section class="options">
+  <div class="options__inner">
+    <div class="options__header">
+      <p class="eyebrow">Choose Your Starting Point</p>
+      <h2 class="section-title">Three paths forward.<br><em>Each designed for where you are.</em></h2>
+      <p class="section-body" style="max-width:540px">The guide you just downloaded gives you the full picture. Here is the short version of where to start based on where you are right now.</p>
+    </div>
+    <div class="options__grid">
+
+      <div class="option-card option-card--a">
+        <div class="option-card__pill"><span class="offer-pill offer-pill--free">Free &middot; 5 Minutes</span></div>
+        <div class="option-card__title">Check Your Alignment</div>
+        <div class="option-card__price">Free Diagnostic &middot; PDF Delivered by Email</div>
+        <p class="option-card__desc">Not sure where to start? This free diagnostic identifies the specific area of your business creating the most drag right now and gives you a prioritized starting point. No call required.</p>
+        <a href="/alignment" class="option-card__cta">Start the free diagnostic &rarr;</a>
+      </div>
+
+      <div class="option-card option-card--b">
+        <div class="option-card__pill"><span class="offer-pill offer-pill--paid">$500 &middot; 60 Minutes</span></div>
+        <div class="option-card__title">Direction Session</div>
+        <div class="option-card__price">Paid Diagnostic &middot; With Veronica Dietz</div>
+        <p class="option-card__desc">A focused 60-minute session to locate the load-bearing issue in your business and map the specific next moves. Written summary included. No obligation to continue. This is not the free strategy call.</p>
+        <a href="/direction-session" class="option-card__cta">Learn about the Direction Session &rarr;</a>
+      </div>
+
+      <div class="option-card option-card--c">
+        <div class="option-card__pill"><span class="offer-pill offer-pill--dfy">Done-For-You &middot; Free Call</span></div>
+        <div class="option-card__title">Free Strategy Call</div>
+        <div class="option-card__price">Discovery Call &middot; For Implementation Inquiries</div>
+        <p class="option-card__desc">Already know what you need built and want to talk about whether Tyche is the right team? Book a free discovery call. We discuss fit, scope, and next steps. No pitch, no pressure.</p>
+        <a href="#strategy-call" class="option-card__cta">Book a free strategy call &rarr;</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- STRATEGY CALL BOOKING -->
+<section class="strategy" id="strategy-call">
+  <div class="strategy__inner">
+    <div class="strategy__content">
+      <p class="eyebrow">Book Your Free Strategy Call</p>
+      <h2 class="section-title">Ready to talk about<br>what you <em>actually need?</em></h2>
+      <blockquote class="strategy__lead">A free strategy call is a conversation about fit. We discuss where you are, what you need, and whether Tyche is the right partner for the work.</blockquote>
+      <div class="strategy__body">
+        <p>This is specifically for businesses considering done-for-you implementation. It is not a diagnostic session. If you want a proper diagnostic, the Direction Session is the right fit at $500.</p>
+        <p>The strategy call is free. There is no pitch at the end. If it is a clear fit, we outline next steps. If it is not, we tell you honestly and may point you toward a better starting point.</p>
+      </div>
+      <p class="eyebrow">What we cover on the call</p>
+      <ul class="what-list">
+        <li><span class="what-item__text">Where your business is and what is not working</span></li>
+        <li><span class="what-item__text">What specifically needs to be built or fixed</span></li>
+        <li><span class="what-item__text">Whether Tyche is the right fit for the work</span></li>
+        <li><span class="what-item__text">Rough scope and timeline if it is a fit</span></li>
+        <li><span class="what-item__text">Honest next steps regardless of fit</span></li>
+      </ul>
+      <p style="font-family:var(--serif-b);font-size:14px;font-style:italic;color:var(--light)">Not ready for a call yet? <a href="/alignment" style="color:var(--navy);border-bottom:1px solid var(--border-camel);padding-bottom:1px">Start with the free diagnostic</a> or <a href="/direction-session" style="color:var(--navy);border-bottom:1px solid var(--border-camel);padding-bottom:1px">book a Direction Session</a> for a paid diagnostic with a written summary.</p>
+    </div>
+    <div class="strategy__calendar">
+      <div class="cal-header">
+        <p class="cal-header__badge">Free &middot; No Obligation</p>
+        <div class="cal-header__title">Book a Free Strategy Call</div>
+        <div class="cal-header__sub">Select a time that works for you</div>
+      </div>
+      <div class="cal-frame">
+        <iframe src="https://the.veronicadietz.com/widget/booking/rAmETPD43hKrW3J3BsJv" style="width:100%;border:none;overflow:hidden;min-height:680px" scrolling="no" id="kz6oiDKcvo9nwy0rS5iZ_1775925282828" title="Book a Free Strategy Call"></iframe>
+      </div>
+      <p class="cal-note">Free. You will receive a confirmation by email.</p>
+    </div>
+  </div>
+</section>
+
+<script src="https://the.veronicadietz.com/js/form_embed.js" type="text/javascript"></script>
+
+<!-- DIRECTION SESSION NUDGE -->
+<div class="ds-nudge">
+  <div class="ds-nudge__inner">
+    <div class="ds-nudge__content">
+      <div class="ds-nudge__pill"><span class="offer-pill offer-pill--paid">$500 &middot; Paid Diagnostic</span></div>
+      <h2 class="ds-nudge__title">Not sure if you need<br>implementation yet?<br><em>Start with a Direction Session.</em></h2>
+      <p class="ds-nudge__body">If you are still trying to figure out what is wrong before spending anything on building, the Direction Session is a much better starting point than a free discovery call. You leave with a written map of next moves whether you hire Tyche or not.</p>
+      <ul class="ds-nudge__list">
+        <li>Pre-session intake so no time is wasted</li>
+        <li>60-minute diagnostic with Veronica Dietz</li>
+        <li>Identification of the load-bearing issue</li>
+        <li>Prioritized next moves in writing</li>
+        <li>No obligation to continue after</li>
+      </ul>
+    </div>
+    <div class="ds-nudge__card">
+      <div class="ds-nudge__card-price">$500</div>
+      <div class="ds-nudge__card-duration">60 Minutes &middot; Written Summary Included</div>
+      <p class="ds-nudge__card-body">A focused diagnostic to find what is structurally wrong and map the specific next moves. This is not a strategy call. It is a paid diagnostic that produces a written deliverable.</p>
+      <a href="/direction-session" class="ds-nudge__card-cta">Learn About the Direction Session</a>
+      <a href="/faq#direction-session" class="ds-nudge__card-secondary">Read the FAQ first</a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-top inner">
+    <div><div class="footer__logo"><img src="https://assets.cdn.filesafe.space/erNBMEPHr5mwBKO660ir/media/693b11a65b7f645e8fd3a4ef.png" alt="Tyche Digital Agency"></div><p class="footer__desc">Marketing systems for service businesses that want leads without manufacturing momentum every week.</p></div>
+    <div class="footer-col"><h4>Work With Us</h4><a href="/book">Free Strategy Call</a><a href="/direction-session">Direction Session &mdash; $500</a><a href="/alignment">Check Your Alignment</a><a href="/services">All Services</a></div>
+    <div class="footer-col"><h4>Resources</h4><a href="https://tychedigitalagency.blogspot.com/" target="_blank">The Direction Journal</a><a href="/faq">FAQ</a><a href="https://go.veronicadietz.com/magnetic-messaging-mini-guide-2200" target="_blank">Magnetic Messaging</a><a href="/investment-guide">Investment Guide</a></div>
+    <div class="footer-col"><h4>Company</h4><a href="/about">About Veronica</a><a href="https://share.google/3Jh5pTQkHRGIj3X5I" target="_blank">VD Advisory Group</a><a href="https://go.tychedigitalagency.net/contact" target="_blank">Contact</a><a href="https://go.tychedigitalagency.net/privacy-policy" target="_blank">Privacy Policy</a><a href="https://go.tychedigitalagency.net/terms-and-conditions" target="_blank">Terms</a></div>
+  </div>
+  <div class="footer-bottom inner"><span>&copy; 2026 Tyche Digital Agency &middot; Founded by <a href="https://share.google/3Jh5pTQkHRGIj3X5I" target="_blank">Veronica Dietz</a></span><a href="https://go.tychedigitalagency.net/terms-and-conditions" target="_blank">Terms</a></div>
+</footer>
+
+</body>
+</html>
